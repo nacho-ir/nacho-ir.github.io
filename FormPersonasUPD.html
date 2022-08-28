@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniSistema Personas - MySQL</title>
+    <link rel="stylesheet" href="EstilosPersonas.css" />
+    <script type="text/javascript" src="FuncionesPersonas.js"></script>
+</head>
+<body>
+    <!-- SECCION CABECERA -->
+    <div id="head">
+        <h1>MiniSistema Personas - MySQL</h1>
+    </div>
+    <!-- SECCION MENÚ -->
+    <div id="menu">
+        <a href="index.html">Inicio</a>
+        <a href="FormPersonasINS.html">Insertar</a>
+        <a href="FormPersonasUPD.html">Actualizar</a>
+        <a href="FormPersonasDEL.html">Eliminar</a>
+        <a href="ProcesoPersonasVER.php">Visualizar</a>
+        <a href="javascript:window.close();">Salir</a>
+    </div>
+    <!-- SECCION CONTENIDO -->
+    <div id="contenido">
+        <fieldset id="frm">
+            <legend>Actualizar</legend>
+            <form id="dataFRM" action="ProcesoPersonasConfirm.php" method="POST">
+                <table>
+                    <tr>
+                        <td>ID:</td>
+                        <td>
+                            <input id="dataID" type="text" name="ID"  />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nombre:</td>
+                        <td>
+                            <input id="dataNOM" type="text" name="NOM" disabled />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Dirección:</td>
+                        <td>
+                            <input id="dataDIR" type="text" name="DIR" disabled/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Teléfono:</td>
+                        <td>
+                            <input id="dataTEL" type="text" name="TEL" value="+598" disabled/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Departamento:</td>
+                        <td>
+                            <input id="dataDTO" type="text" name="DTO" disabled/>
+                        </td>
+                    </tr> 
+                    <!-- fila de botones del formulario  -->
+                    <tr>
+                        <td colspan="2">
+                            <input type="button" value="Buscar por ID" onclick="CheckID();"/>
+                            <input type="reset"  value="Cancelar" />
+                        </td>
+                    </tr>                    
+                </table>
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>

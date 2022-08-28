@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniSistema Personas - ABM</title>
+    <link rel="stylesheet" href="EstilosPersonas.css" />
+</head>
+<body>
+    <!-- SECCION CABECERA -->
+    <div id="head">
+        <h1>MiniSistema Personas - ABM</h1>
+    </div>
+    <!-- SECCION MENÚ -->
+    <div id="menu">
+        <a href="index.html">Inicio</a>
+        <a href="FormPersonasINS.html">Insertar</a>
+        <a href="FormPersonasUPD.html">Actualizar</a>
+        <a href="FormPersonasDEL.html">Eliminar</a>
+        <a href="ProcesoPersonasVER.php">Visualizar</a>
+        <a href="javascript:window.close();">Salir</a>
+    </div>
+    <!-- SECCION CONTENIDO -->
+    <div id="contenido">
+        <fieldset id="dsc">
+            <legend>Descripción</legend>
+            Comenzamos a construir un sistema en web que permita utilizar todo
+            lo visto en el curso, es decir, HTML para maquetar la estructura de 
+            las distintas pantallas (páginas web) que contiene el sistema, CSS
+            para dar estilo visual a las mismas, Javascript para realizar controles
+            en los formularios e interacción con el usuario, PHP para recibir y 
+            enviar datos desde la Base de Datos, y por supuesto MySQL como motor
+            de la Base.<br/>
+            En esta primera versión del Minisistema solo se puede realizar ingreso
+            de datos y mostrar un listado de TODOS los registros. En posteriores
+            versiones se irá añadiendo distintas funcionalidades.
+            <br/>
+            En esta nueva versión del MiniSistema Personas, iniciamos la implementacion
+            de una serie de funcionalidades. En primera instancia se trata de las 
+            actualzaciones y eliminacion de registros. Para ello, el sistema presenta
+            un formulario soicitando el ID de la persona a modificar/actualizar, una vez ingresado,
+            al intentar enviar este formulario, JavaScript chequeará que se trata de un
+            número, y en ese caso será enviado a un proceso PHP, que captura el ID.<br/>
+            Este proceso envía una sentencia SQL a la base de datos para buscar el ID,
+            de no existir, el sistema termina dejando un msj de error. Caso contrario,
+            se carga el registro con los valores de las columnas, se almacenan en variables
+            y 'el proceso' crea un nuevo formulario con los datos actuales, permitiendo que 
+            los inputs queden accesibles.
+            Cuando este nuevo formulario es enviado, se vuelve a utilizar la función de
+            JS que verifica que no queden datos vacios. De ser así, es enviado a un nuevoproceso PHP,
+            el cual captura todos los datos de este ultimo formulario, y realiza el update sobre la BD.<br/>
+            Este tipo de operaciones es conocido como ABM de un sistema, por las siglas
+            de Altas, Bajas y Modificaciones. También nombrado como CRUD, de sus siglas en
+            inglés de Create/Update/Delete. 
+
+        </fieldset>
+    </div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+/* DEFINICION DE ESTILOS PARA MINISISTEMA PERSONAS */
+h1 {
+    font-family: arial;
+    font-size: 24px;
+    color: rgb(5, 86, 136);
+    letter-spacing: 3px;
+    display: inline;
+}
+div#head {
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color:rgb(5, 56, 88);
+}
+div#menu {
+    margin-top: 20px;
+}
+a:link {
+    font-family: verdana;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: green;
+    padding: 5px;    
+}
+a:visited {
+    font-family: verdana;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: rgb(67, 63, 63);
+    padding: 5px;    
+}
+a:hover {
+    font-family: verdana;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-right: 10px;
+    text-decoration: underline;
+    color: orange;
+    background-color: black;
+    padding: 5px;    
+}
+div#contenido {
+    width: 90%;
+    margin: 50px auto;
+}
+fieldset#dsc {
+    font-family: calibri;
+    font-size: 16px;
+    font-style: italic;
+    text-align: justify;
+    padding: 20px;
+}
+fieldset#frm {
+    width: 340px;
+    font-family: calibri;
+    font-size: 16px;
+    font-style: italic;
+    text-align: justify;
+    padding: 20px;
+}
+legend {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-family: arial;
+    font-size:14px;
+    font-style:normal;
+}
+td {
+    text-align: right;
+}
+table#lst {
+    width: 100%;
+    padding: 10px;
+    font-family: arial;
+    font-size: 16px;
+}
+table#lst th {
+    background-color: black;
+    color: white;
+}
+table#lst td {
+    text-align: left;
+}
+.dcha {
+    text-align: right;
+}
+.filaIMP {
+    background-color: rgb(195, 187, 187);
+}
+.filaPAR {
+    background-color: rgb(120, 116, 116);
+}
